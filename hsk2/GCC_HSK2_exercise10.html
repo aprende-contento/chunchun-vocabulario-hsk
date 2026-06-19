@@ -155,21 +155,6 @@ header{position:relative;z-index:10;background:rgba(255,255,255,0.62);backdrop-f
 .nb-count{font-size:0.82rem;color:#5a8a7a;}
 .nb-clear-btn{padding:0.35rem 0.9rem;border-radius:99px;border:none;cursor:pointer;background:rgba(224,80,80,0.1);color:#c03030;font-size:0.8rem;}
 
-/* ── FOOTER CARD ── */
-footer{position:relative;z-index:5;padding:0.8rem 1rem;margin-top:auto;}
-.footer-card{
-  max-width:500px;margin:0 auto;
-  background:rgba(255,255,255,0.72);backdrop-filter:blur(16px);
-  border-radius:12px;border:1px solid rgba(42,148,144,0.15);
-  box-shadow:0 4px 20px rgba(60,120,50,0.08);
-  padding:0.45rem 0.8rem;
-  display:flex;align-items:center;justify-content:space-between;gap:0.6rem;
-}
-.footer-contact{display:flex;flex-direction:column;gap:0.2rem;}
-.footer-whatsapp{display:flex;align-items:center;gap:0.3rem;font-size:0.82rem;font-weight:700;color:#25D366;letter-spacing:0.04em;}
-.footer-whatsapp svg{width:16px;height:16px;}
-.footer-brand{font-size:0.62rem;color:rgba(42,92,80,0.6);letter-spacing:0.06em;}
-.footer-qr{height:56px;width:56px;border-radius:5px;object-fit:contain;background:#fff;border:1px solid rgba(42,148,144,0.15);}
 
 /* ── PARTICLES ── */
 .particle{position:fixed;pointer-events:none;font-size:1.2rem;z-index:200;animation:floatUp .8s ease forwards;}
@@ -248,17 +233,6 @@ footer{position:relative;z-index:5;padding:0.8rem 1rem;margin-top:auto;}
   </div>
 </div>
 
-<footer>
-  <div class="footer-card">
-    <div class="footer-whatsapp">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.944 9.944 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="#25D366"/>
-        <path d="M17.006 14.57c-.274-.137-1.62-.8-1.872-.891-.252-.09-.435-.137-.617.138-.183.274-.707.89-.867 1.073-.16.182-.32.206-.594.069-.274-.138-1.156-.426-2.202-1.359-.814-.726-1.363-1.622-1.523-1.896-.16-.275-.017-.423.12-.56.123-.122.274-.32.411-.48.138-.16.183-.275.275-.458.09-.184.045-.344-.023-.481-.069-.138-.617-1.487-.846-2.036-.223-.535-.45-.463-.617-.472l-.526-.009c-.183 0-.48.069-.731.344-.252.275-.961.94-.961 2.29 0 1.349.984 2.653 1.121 2.836.137.183 1.937 2.96 4.694 4.152.656.283 1.168.452 1.566.579.658.21 1.257.18 1.73.11.527-.08 1.62-.663 1.849-1.303.228-.64.228-1.189.16-1.303-.07-.114-.252-.183-.526-.32z" fill="white"/>
-      </svg>
-      <span>656 523 387 &nbsp;|&nbsp; Chunchun Guo</span>
-    </div>
-  </div>
-</footer>
 
 <div class="modal-overlay" id="modal-overlay" onclick="modalOutsideClick(event)">
   <div class="modal">
@@ -495,5 +469,6 @@ function clearNotebook(){wrongItems=[];sessionStorage.removeItem("wItems_gcc_hsk
 function spawnParticles(el,emojis){const rect=el.getBoundingClientRect();for(let i=0;i<6;i++){const p=document.createElement("div");p.className="particle";p.textContent=emojis[Math.floor(Math.random()*emojis.length)];p.style.left=(rect.left+rect.width/2+(Math.random()-0.5)*80)+"px";p.style.top=(rect.top+rect.height/2)+"px";p.style.animationDelay=(i*0.07)+"s";document.body.appendChild(p);setTimeout(()=>p.remove(),1400);}}
 startGame();
 </script>
+<script src="../common.js"></script>
 </body>
 </html>

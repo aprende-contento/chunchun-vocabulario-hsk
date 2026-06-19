@@ -90,17 +90,7 @@ header::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1px
 .restart-btn{padding:10px 26px;border-radius:50px;border:none;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#fff;font-family:'Noto Sans SC',sans-serif;font-size:0.84rem;font-weight:700;cursor:pointer;letter-spacing:2px;margin:0 4px;transition:all 0.2s;box-shadow:0 2px 10px rgba(42,148,144,0.25);}
 .restart-btn:hover{opacity:0.9;transform:translateY(-2px);}
 .restart-btn.outline{background:transparent;border:1.5px solid var(--gold);color:var(--gold);box-shadow:none;}
-footer{position:relative;z-index:2;margin:10px 0 0;display:flex;justify-content:center;}
-.footer-card{display:inline-flex;align-items:center;background:rgba(255,255,255,0.45);border:1px solid rgba(42,148,144,0.18);border-radius:40px;padding:7px 16px 7px 12px;backdrop-filter:blur(6px);gap:10px;box-shadow:0 1px 6px rgba(0,0,0,0.04);}
-.wa-icon{width:24px;height:24px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.wa-icon svg{width:13px;height:13px;fill:#fff;}
-.wa-num{font-weight:800;color:var(--ink);font-size:0.88rem;letter-spacing:1.5px;}
-.wa-sub{font-size:0.58rem;color:var(--subtext);letter-spacing:0.5px;}
-.footer-divider{width:1px;height:28px;background:rgba(42,148,144,0.18);}
-.footer-qr img{height:36px;border-radius:4px;border:1px solid rgba(42,148,144,0.15);display:block;}
 @keyframes pop{0%{transform:scale(0.96);opacity:0}100%{transform:scale(1);opacity:1}}
-.footer-card{max-width:360px;margin:0 auto;background:rgba(255,255,255,0.9);border-radius:12px;border:1px solid rgba(80,160,80,0.15);box-shadow:0 4px 16px rgba(60,120,60,0.08);padding:0.5rem 1.2rem;}
-.footer-whatsapp{display:flex;align-items:center;gap:0.5rem;}
 
   .volver-wrap { max-width:660px; margin:0 auto; padding:8px 16px 0; }
   .volver-btn { display:inline-block; font-size:0.85rem; color:rgba(42,61,34,0.7); text-decoration:none; padding:4px 10px; border:1px solid rgba(42,61,34,0.2); border-radius:20px; background:rgba(255,255,255,0.5); }
@@ -185,13 +175,7 @@ footer{position:relative;z-index:2;margin:10px 0 0;display:flex;justify-content:
       </div>
     </div>
   </div>
-  <footer><div class="footer-card"><div class="footer-whatsapp">
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:18px;height:18px;flex-shrink:0;">
-    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.944 9.944 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="#25D366"/>
-    <path d="M17.006 14.57c-.274-.137-1.62-.8-1.872-.891-.252-.09-.435-.137-.617.138-.183.274-.707.89-.867 1.073-.16.182-.32.206-.594.069-.274-.138-1.156-.426-2.202-1.359-.814-.726-1.363-1.622-1.523-1.896-.16-.275-.017-.423.12-.56.123-.122.274-.32.411-.48.138-.16.183-.275.275-.458.09-.184.045-.344-.023-.481-.069-.138-.617-1.487-.846-2.036-.223-.535-.45-.463-.617-.472l-.526-.009c-.183 0-.48.069-.731.344-.252.275-.961.94-.961 2.29 0 1.349.984 2.653 1.121 2.836.137.183 1.937 2.96 4.694 4.152.656.283 1.168.452 1.566.579.658.21 1.257.18 1.73.11.527-.08 1.62-.663 1.849-1.303.228-.64.228-1.189.16-1.303-.07-.114-.252-.183-.526-.32z" fill="white"/>
-  </svg>
-  <span style="font-weight:700;color:#25D366;font-size:0.9rem;letter-spacing:0.03em;">656 523 387 &nbsp;|&nbsp; Chunchun Guo</span>
-</div></div></footer>
+  
 </div>
 <script>
 const vocab = [
@@ -316,5 +300,6 @@ function switchMode(){document.getElementById('results-screen').classList.remove
 startGame();
 
 </script>
+<script src="../common.js"></script>
 </body>
 </html>

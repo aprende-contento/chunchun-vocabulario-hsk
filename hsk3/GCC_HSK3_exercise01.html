@@ -373,9 +373,6 @@
     text-align: center; padding: 1.5rem 1rem 1rem; letter-spacing: 0.1em; z-index: 1;
   }
 
-.footer-card{max-width:360px;margin:0 auto;background:rgba(255,255,255,0.72);backdrop-filter:blur(16px);border-radius:12px;border:1px solid rgba(60,140,80,0.15);box-shadow:0 4px 20px rgba(40,100,50,0.08);padding:0.5rem 1.2rem;}
-.footer-whatsapp{display:flex;align-items:center;gap:0.4rem;font-size:0.9rem;font-weight:700;color:#25D366;letter-spacing:0.03em;}
-.footer-whatsapp svg{width:18px;height:18px;}
 </style>
 </head>
 <body>
@@ -457,17 +454,6 @@
     </div>
   </div>
 </div>
-<footer>
-  <div class="footer-card">
-    <div class="footer-whatsapp">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.406A9.944 9.944 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="#25D366"/>
-        <path d="M17.006 14.57c-.274-.137-1.62-.8-1.872-.891-.252-.09-.435-.137-.617.138-.183.274-.707.89-.867 1.073-.16.182-.32.206-.594.069-.274-.138-1.156-.426-2.202-1.359-.814-.726-1.363-1.622-1.523-1.896-.16-.275-.017-.423.12-.56.123-.122.274-.32.411-.48.138-.16.183-.275.275-.458.09-.184.045-.344-.023-.481-.069-.138-.617-1.487-.846-2.036-.223-.535-.45-.463-.617-.472l-.526-.009c-.183 0-.48.069-.731.344-.252.275-.961.94-.961 2.29 0 1.349.984 2.653 1.121 2.836.137.183 1.937 2.96 4.694 4.152.656.283 1.168.452 1.566.579.658.21 1.257.18 1.73.11.527-.08 1.62-.663 1.849-1.303.228-.64.228-1.189.16-1.303-.07-.114-.252-.183-.526-.32z" fill="white"/>
-      </svg>
-      <span>656 523 387 &nbsp;|&nbsp; Chunchun Guo</span>
-    </div>
-  </div>
-</footer>
 <img id="logo-data" src="../chunchun-logo.png" style="display:none" alt="">
 <script>
 document.getElementById("logo-img").src = document.getElementById("logo-data").src;
@@ -564,5 +550,6 @@ function clearNotebook(){wrongItems=[];sessionStorage.removeItem("wItems_hsk3_v1
 function spawnParticles(el,emojis){const rect=el.getBoundingClientRect();for(let i=0;i<6;i++){const p=document.createElement("div");p.className="particle";p.textContent=emojis[Math.floor(Math.random()*emojis.length)];p.style.left=(rect.left+rect.width/2+(Math.random()-0.5)*80)+"px";p.style.top=(rect.top+rect.height/2)+"px";p.style.animationDelay=(i*0.07)+"s";document.body.appendChild(p);setTimeout(()=>p.remove(),1400);}}
 startGame();
 </script>
+<script src="../common.js"></script>
 </body>
 </html>
