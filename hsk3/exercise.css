@@ -150,3 +150,11 @@ header{position:relative;z-index:10;background:rgba(255,255,255,0.62);backdrop-f
 /* ── PARTICLES ── */
 .particle{position:fixed;pointer-events:none;font-size:1.2rem;z-index:200;animation:floatUp .8s ease forwards;}
 @keyframes floatUp{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-70px) scale(1.3)}}
+
+/* ── MOBILE ── */
+@media (max-width:767px){
+  .tool-group{margin-right:0;}
+  .score-bar{padding:0.3rem 0.6rem;gap:0.5rem;}
+  .volver-text{display:none;}
+  .header-top>a{padding:0.35rem 0.5rem!important;}
+}

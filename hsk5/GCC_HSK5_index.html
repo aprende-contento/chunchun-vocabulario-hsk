@@ -37,13 +37,14 @@ footer{border-top:1px solid rgba(90,122,69,0.22);background:rgba(255,255,255,0.2
 .wa-info{display:flex;flex-direction:column;}
 .wa-num{font-size:1.05rem;font-weight:700;color:#1a1a1a;letter-spacing:0.05em;}
 .wa-name{font-size:0.72rem;color:#6b7c5a;letter-spacing:0.05em;}
+@media(max-width:767px){.volver-text{display:none;}.back-btn{padding:0.4rem 0.5rem;}}
 </style>
 </head>
 <body>
 <header>
   <a class="back-btn" href="../index.html">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-    Volver
+    <span class="volver-text">Volver</span>
   </a>
   <div class="header-center">
     <div class="header-title">HSK5词汇练习</div>
