@@ -34,9 +34,9 @@
     </div>
   </div>
   <div class="mode-tabs">
-    <button class="mode-btn active" onclick="setMode('zh_es',this)">中文→Español</button>
+    <button class="mode-btn active" onclick="setMode('zh_es',this)">中文 + Pīnyīn → Español</button>
     <button class="mode-btn" onclick="setMode('es_zh',this)">Español→中文</button>
-    <button class="mode-btn" onclick="setMode('pinyin_es',this)">汉字→Español</button>
+    <button class="mode-btn" onclick="setMode('pinyin_es',this)">中文 → Español</button>
     <button class="mode-btn" onclick="setMode('sentence',this)">🧩 Ordenar frase</button>
   </div>
 </header>
@@ -184,6 +184,7 @@ function playTone(type){
 }
 
 function toggleSound(){soundOn=!soundOn;const b=document.getElementById("sound-btn");b.textContent=soundOn?"🔊":"🔇";b.classList.toggle("active",soundOn);}
+(function(){var _b=document.getElementById("sound-btn");if(_b&&!soundOn){_b.textContent="ð";_b.classList.remove("active");}})();
 document.addEventListener("DOMContentLoaded",function(){var b=document.getElementById("sound-btn");if(b&&!soundOn){b.textContent="🔇";b.classList.remove("active");}});
 function toggleTimer(){timerMode=!timerMode;document.getElementById("timer-btn").classList.toggle("active",timerMode);const show=timerMode&&mode!=="sentence";document.getElementById("timer-wrap").classList.toggle("visible",show);document.getElementById("timer-num").classList.toggle("visible",show);startGame();}
 function setMode(m,el){mode=m;document.querySelectorAll(".mode-btn").forEach(b=>b.classList.remove("active"));el.classList.add("active");const show=timerMode&&mode!=="sentence";document.getElementById("timer-wrap").classList.toggle("visible",show);document.getElementById("timer-num").classList.toggle("visible",show);startGame();}
